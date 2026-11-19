@@ -1,0 +1,1 @@
+Phase 6: account blocking and user reports. Block relationships prevent messaging and file exchange. Reports are stored for later moderation review; no moderator console.

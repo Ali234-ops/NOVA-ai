@@ -1,0 +1,1 @@
+NOVA AI Phase 3: local authenticated text messaging. HTTP polling, plaintext SQLite storage. Not production-ready. No E2EE, calls, attachments, push notifications, or device sync.

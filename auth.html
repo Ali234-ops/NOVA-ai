@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d1b"><title>NOVA AI — Account</title>
+<link rel="icon" href="assets/nova-mark.svg"><link rel="stylesheet" href="styles.css">
+<style>
+.auth-wrap{min-height:100vh;display:grid;place-items:center;padding:24px}.auth-card{width:min(100%,490px);border:1px solid var(--line);background:#11182a;border-radius:23px;padding:30px;box-shadow:0 20px 80px #0005}.auth-brand{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:22px}.auth-brand h1{font:800 22px Inter,sans-serif;margin:0}.auth-brand .brand-mark{width:44px;height:44px}.auth-card h2{text-align:center;margin:8px 0;font-size:24px}.auth-card>p{text-align:center;color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 22px}.auth-tabs{display:grid;grid-template-columns:1fr 1fr;background:#0b1222;border-radius:11px;padding:4px;margin-bottom:20px}.auth-tabs button{border:0;background:transparent;color:var(--muted);padding:10px;border-radius:8px}.auth-tabs button.active{background:#8d78ff25;color:#d5caff}.auth-form{display:grid;gap:12px}.auth-form label{font-size:11px;color:#cbd3e8}.auth-form input{display:block;width:100%;margin-top:6px;background:#0b1222;border:1px solid var(--line);border-radius:10px;padding:12px;color:white;outline:none}.auth-form input:focus{border-color:#9b7cff}.auth-submit{width:100%;margin-top:5px}.auth-message{min-height:22px;font-size:11px;color:#f1ca8b;line-height:1.6}.auth-message.ok{color:#70e6c2}.auth-foot{text-align:center;color:var(--muted);font-size:10px;margin-top:18px;line-height:1.8}.auth-back{display:block;text-align:center;color:#bca9ff;font-size:11px;text-decoration:none;margin-top:15px}.auth-user{display:none;text-align:center}.auth-user .avatar{margin:0 auto 12px;width:58px;height:58px}.api-config{margin-top:16px;padding:12px;border:1px solid var(--line);border-radius:10px}.api-config label{display:block;color:var(--muted);font-size:10px}.api-config input{width:100%;margin-top:6px;background:#0b1222;border:1px solid var(--line);padding:9px;border-radius:8px;color:white;font-size:11px}
+</style>
+</head>
+<body>
+<div class="auth-wrap"><main class="auth-card">
+<div class="auth-brand"><span class="brand-mark">N</span><h1>NOVA <span class="gradient-text">AI</span></h1></div>
+<h2 data-t="title">حسابك في NOVA يبدأ هنا</h2><p data-t="subtitle">أنشئ حساباً تجريبياً محلياً أو سجّل الدخول إلى حسابك.</p>
+<div id="auth-area">
+<div class="auth-tabs"><button id="tab-login" class="active" type="button" data-t="login">تسجيل الدخول</button><button id="tab-register" type="button" data-t="register">إنشاء حساب</button></div>
+<form id="login-form" class="auth-form">
+<label><span data-t="identity">اسم المستخدم أو البريد الإلكتروني</span><input name="identity" required autocomplete="username"></label>
+<label><span data-t="password">كلمة المرور</span><input name="password" type="password" required autocomplete="current-password"></label>
+<button class="primary-btn auth-submit" type="submit" data-t="login">تسجيل الدخول</button>
+</form>
+<form id="register-form" class="auth-form" hidden>
+<label><span data-t="display">الاسم الظاهر</span><input name="displayName" required maxlength="60" autocomplete="name"></label>
+<label><span data-t="username">اسم المستخدم (3–24 حرفاً)</span><input name="username" required minlength="3" maxlength="24" pattern="[A-Za-z0-9_]+" autocomplete="username"></label>
+<label><span data-t="email">البريد الإلكتروني</span><input name="email" type="email" required autocomplete="email"></label>
+<label><span data-t="password">كلمة المرور</span><input name="password" type="password" required minlength="10" maxlength="128" autocomplete="new-password"></label>
+<small style="color:var(--muted);font-size:10px" data-t="passwordHint">استخدم 10 أحرف على الأقل.</small>
+<button class="primary-btn auth-submit" type="submit" data-t="create">إنشاء الحساب</button>
+</form>
+<div class="auth-message" id="auth-message" role="status"></div>
+<div class="api-config"><label><span data-t="apiUrl">عنوان الخادم المحلي</span><input id="api-url" value="http://127.0.0.1:8000" spellcheck="false"></label></div>
+</div>
+<div id="signed-in" class="auth-user">
+<div class="avatar avatar-user">N</div><h2 data-t="signedIn">تم تسجيل الدخول</h2><p id="user-summary"></p><button id="logout" class="primary-btn" data-t="logout">تسجيل الخروج</button>
+</div>
+<a class="auth-back" href="index.html" data-t="back">العودة إلى NOVA AI</a>
+<div class="auth-foot" data-t="disclaimer">نسخة تطوير محلية. لا تستخدم كلمة مرور حقيقية أو بيانات شخصية حساسة.</div>
+</main></div>
+<script src="auth.js"></script>
+</body></html>

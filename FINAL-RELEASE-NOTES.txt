@@ -1,0 +1,18 @@
+NOVA AI — FINAL CONSOLIDATED DEVELOPMENT RELEASE
+
+Included: PWA landing UI, authentication, local development API, messenger,
+conversation list, account discovery/search, profile editing, session management,
+notifications, file sharing (4 MB; JPEG/PNG/WEBP/PDF/TXT), blocking and reporting,
+unread/read receipts, and mobile-responsive UI.
+
+START (Windows): double-click START-NOVA-WINDOWS.bat
+START (macOS/Linux): sh START-NOVA-MAC-LINUX.sh
+Then sign up at http://127.0.0.1:5500/auth.html
+
+Local prototype only. API binds to localhost by default. The consolidated ZIP
+excludes the development database and uploaded test files. Data is not synced
+between devices; messages and attachments are NOT end-to-end encrypted. No live
+voice/video calls or push notifications. Do not use real sensitive data or deploy
+publicly. Public deployment requires security/privacy review, HTTPS, rate limits,
+verification, moderation, abuse controls, backups, retention/deletion controls,
+and hardened storage. No software can promise 100% security.

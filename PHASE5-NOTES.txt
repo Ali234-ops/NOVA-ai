@@ -1,0 +1,1 @@
+Phase 5: local attachment sharing for JPEG, PNG, WEBP, PDF and TXT files up to 4MB. Authenticated downloads. No E2EE, virus scanning or cloud object storage.

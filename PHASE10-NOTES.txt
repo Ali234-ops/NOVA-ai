@@ -1,0 +1,7 @@
+NOVA AI — Phase 10
+Profile and settings UI added.
+- profile.html/profile.js: display name and bio editing via API; account summary.
+- Device-local compact preference toggle.
+- Messenger header links to profile.
+- Existing POST /api/profile endpoint used.
+Development-only build; do not use sensitive personal data.

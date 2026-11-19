@@ -1,0 +1,3 @@
+NOVA AI — PHASE 9
+Session-management API and page: active sessions listing, revoke an individual other session, revoke all other sessions. Linked from messenger.
+Local development only; review security controls before production deployment.

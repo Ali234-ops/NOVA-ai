@@ -1,0 +1,5 @@
+NOVA AI Phase 12
+- Added blocked accounts management page (blocks.html / blocks.js)
+- List blocked accounts and unblock them
+- Linked from profile and messenger navigation
+- Uses existing authenticated API endpoint; local development only

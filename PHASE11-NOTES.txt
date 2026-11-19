@@ -1,0 +1,6 @@
+NOVA AI — Phase 11: Mobile UX refinements
+- Refined mobile messenger layout and header spacing
+- Sticky messenger header and send area on smaller screens
+- Improved touch target sizing and file attachment layout
+- Responsive chat safety controls and message sizing
+- CSS-only changes; existing API and data behavior unchanged

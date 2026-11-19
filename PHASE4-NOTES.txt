@@ -1,0 +1,1 @@
+Phase 4: editable profile, short public bio, account search, jump to messenger. Development-only local prototype.

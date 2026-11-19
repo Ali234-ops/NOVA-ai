@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1b">
+  <meta name="description" content="NOVA AI — منصة تواصل اجتماعي ومراسلة ذكية">
+  <title>NOVA AI — Connect. Communicate. Create.</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/nova-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="NOVA AI home">
+        <span class="brand-mark">N</span><span class="brand-name">NOVA <b>AI</b></span>
+      </a>
+      <div class="profile-mini">
+        <div class="avatar avatar-user">N</div>
+        <div><strong data-i18n="guest">ضيف NOVA</strong><small data-i18n="welcome">مرحباً بك</small></div>
+        <span class="online-dot"></span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span>⌂</span><em data-i18n="home">الرئيسية</em></button>
+        <button class="nav-item" data-view="messages"><span>▤</span><em data-i18n="messages">المحادثات</em><i class="nav-count">3</i></button>
+        <a class="nav-item" href="messenger.html" style="text-decoration:none"><span>✉</span><em>فتح NOVA MESSENGER</em></a>
+        <a class="nav-item" href="discover.html" style="text-decoration:none"><span>◎</span><em>اكتشف الأشخاص</em></a>
+        <button class="nav-item" data-view="community"><span>◎</span><em data-i18n="community">المجتمع</em></button>
+        <button class="nav-item ai-nav" data-view="ai"><span>✦</span><em>NOVA AI</em><b class="new-tag">AI</b></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-view="security"><span>⬡</span><em data-i18n="security">الأمان والخصوصية</em></button>
+        <button class="nav-item" data-view="settings"><span>⚙</span><em data-i18n="settings">الإعدادات</em></button>
+        <div class="sidebar-foot"><span class="status-dot"></span><span data-i18n="prototype">نسخة تصميم أولية</span><small>v0.1.0</small></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">N</span><b>NOVA AI</b></div>
+        <div class="breadcrumbs"><span data-i18n="workspace">مساحة NOVA</span><span>/</span><strong id="page-title" data-i18n="home">الرئيسية</strong></div>
+        <div class="top-actions"><a class="icon-btn" href="auth.html" title="Account" style="display:grid;place-items:center;text-decoration:none">♙</a>
+          <button class="icon-btn" id="language-toggle" title="Change language">EN</button>
+          <button class="icon-btn notification-btn" aria-label="Notifications">♧<i></i></button>
+          <button class="avatar avatar-user top-avatar" aria-label="Profile">N</button>
+        </div>
+      </header>
+
+      <section class="content" id="view-home">
+        <div class="welcome-row">
+          <div><p class="eyebrow" data-i18n="goodday">مساحة تواصل أكثر ذكاءً</p><h1><span data-i18n="welcomeTitle">مرحباً بك في</span> <span class="gradient-text">NOVA AI</span></h1><p class="muted" data-i18n="welcomeSub">تواصل، شارك، واكتشف تجربة اجتماعية جديدة.</p></div>
+          <button class="primary-btn" data-action="new-post"><span>＋</span><span data-i18n="createPost">إنشاء منشور</span></button>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+          <div class="hero-copy"><span class="hero-chip">✦ NOVA INTELLIGENCE</span><h2 data-i18n="heroTitle">كل تواصلك، في مكان واحد.</h2><p data-i18n="heroText">منصة تجمع المحادثات والمجتمع والأدوات الذكية ضمن تجربة بسيطة.</p><button class="light-btn" data-view="ai" data-i18n="tryAI">اكتشف NOVA AI <span>←</span></button></div>
+          <div class="hero-symbol"><div class="symbol-ring"></div><span>N</span><small>AI</small></div>
+        </div>
+
+        <div class="section-heading"><div><h2 data-i18n="quickAccess">وصول سريع</h2><p class="muted" data-i18n="quickSub">ابدأ من القسم الذي تحتاجه</p></div><span class="subtle-label">NOVA SPACE</span></div>
+        <div class="quick-grid">
+          <button class="quick-card" data-view="messages"><span class="quick-icon purple">▤</span><b data-i18n="chatCard">محادثاتك</b><small data-i18n="chatDesc">رسائل ومجموعات</small><span class="card-arrow">↗</span></button>
+          <button class="quick-card" data-view="community"><span class="quick-icon blue">◎</span><b data-i18n="community">المجتمع</b><small data-i18n="communityDesc">منشورات واكتشاف</small><span class="card-arrow">↗</span></button>
+          <button class="quick-card" data-view="ai"><span class="quick-icon pink">✦</span><b>NOVA AI</b><small data-i18n="aiDesc">مساعدك الذكي</small><span class="card-arrow">↗</span></button>
+          <button class="quick-card" data-view="security"><span class="quick-icon green">⬡</span><b data-i18n="privacyCard">مركز الخصوصية</b><small data-i18n="privacyDesc">إعدادات الحماية</small><span class="card-arrow">↗</span></button>
+        </div>
+
+        <div class="section-heading"><div><h2 data-i18n="latest">من المجتمع</h2><p class="muted" data-i18n="latestSub">معاينة للمحتوى الاجتماعي</p></div><button class="text-btn" data-view="community" data-i18n="viewAll">عرض الكل</button></div>
+        <article class="post-card">
+          <div class="post-head"><div class="avatar avatar-purple">N</div><div><b>NOVA Community</b><small data-i18n="justNow">الآن · منشور تجريبي</small></div><button class="more-btn">•••</button></div>
+          <p data-i18n="samplePost">مرحباً بك في NOVA AI. هذه مساحة تجريبية للتواصل ومشاركة الأفكار وبناء مجتمعك.</p>
+          <div class="post-actions"><button class="like-btn">♡ <span data-i18n="like">إعجاب</span> <small>24</small></button><button>◯ <span data-i18n="comment">تعليق</span></button><button>↗ <span data-i18n="share">مشاركة</span></button></div>
+        </article>
+      </section>
+
+      <section class="content hidden" id="view-messages">
+        <div class="page-heading"><div><p class="eyebrow">NOVA MESSENGER</p><h1 data-i18n="messages">المحادثات</h1><p class="muted" data-i18n="messagesSub">مركز مراسلاتك واتصالاتك</p></div><a class="primary-btn" href="messenger.html" style="text-decoration:none">＋ <span>NOVA MESSENGER</span></a></div>
+        <div class="panel message-panel"><div class="search-box"><span>⌕</span><input data-i18n-placeholder="searchChats" placeholder="ابحث في المحادثات..."></div>
+          <div class="conversation"><div class="avatar avatar-blue">A</div><div class="conversation-info"><b>Ahmed</b><p data-i18n="demoMessage1">أهلاً، كيف حالك؟</p></div><div class="conversation-meta"><small>10:42</small><i class="unread">2</i></div></div>
+          <div class="conversation"><div class="avatar avatar-pink">S</div><div class="conversation-info"><b>Sara</b><p data-i18n="demoMessage2">تم إرسال الصورة</p></div><div class="conversation-meta"><small>أمس</small></div></div>
+          <div class="conversation"><div class="avatar avatar-green">N</div><div class="conversation-info"><b>NOVA Team</b><p data-i18n="demoMessage3">مرحباً بك في مساحة الفريق</p></div><div class="conversation-meta"><small>الأحد</small></div></div>
+          <div class="demo-note" data-i18n="demoNotice">هذه بيانات توضيحية فقط؛ المراسلة الحقيقية ستُبنى في مرحلة الخدمات الخلفية.</div>
+        </div>
+      </section>
+
+      <section class="content hidden" id="view-community">
+        <div class="page-heading"><div><p class="eyebrow">NOVA COMMUNITY</p><h1 data-i18n="community">المجتمع</h1><p class="muted" data-i18n="communitySub">اكتشف الأشخاص والأفكار والمحتوى</p></div><button class="primary-btn" data-action="new-post">＋ <span data-i18n="createPost">إنشاء منشور</span></button></div>
+        <div class="community-banner"><div><span class="hero-chip">YOUR SPACE</span><h2 data-i18n="communityBanner">مساحتك للتعبير والمشاركة</h2><p data-i18n="communityBannerSub">ستتم إضافة المنشورات والمجموعات والقصص في المرحلة الاجتماعية.</p></div><span class="community-art">◎</span></div>
+        <article class="post-card"><div class="post-head"><div class="avatar avatar-purple">N</div><div><b>NOVA Community</b><small data-i18n="justNow">الآن · منشور تجريبي</small></div></div><p data-i18n="samplePost">مرحباً بك في NOVA AI. هذه مساحة تجريبية للتواصل ومشاركة الأفكار وبناء مجتمعك.</p><div class="post-actions"><button class="like-btn">♡ <span data-i18n="like">إعجاب</span> <small>24</small></button><button>◯ <span data-i18n="comment">تعليق</span></button><button>↗ <span data-i18n="share">مشاركة</span></button></div></article>
+      </section>
+
+      <section class="content hidden" id="view-ai">
+        <div class="page-heading"><div><p class="eyebrow">YOUR INTELLIGENT SPACE</p><h1>NOVA <span class="gradient-text">AI</span></h1><p class="muted" data-i18n="aiSub">مساعدك الذكي داخل المنصة</p></div><span class="ai-status"><i></i><span data-i18n="concept">واجهة تجريبية</span></span></div>
+        <div class="ai-panel"><div class="ai-glow">✦</div><h2 data-i18n="aiHello">كيف يمكنني مساعدتك اليوم؟</h2><p data-i18n="aiExplain">سيتم ربط المساعد بخدمة ذكاء اصطناعي في مرحلة التكامل، مع ضوابط واضحة لحماية الخصوصية.</p><div class="prompt-chips"><button data-prompt="help">✧ <span data-i18n="prompt1">ساعدني في كتابة منشور</span></button><button data-prompt="translate">文 <span data-i18n="prompt2">ترجمة نص</span></button><button data-prompt="ideas">✦ <span data-i18n="prompt3">اقترح أفكاراً</span></button></div><form class="ai-input" id="ai-form"><input id="ai-message" data-i18n-placeholder="askAI" placeholder="اكتب رسالتك إلى NOVA AI..." autocomplete="off"><button type="submit" aria-label="Send">↑</button></form><div id="ai-response" class="ai-response" aria-live="polite"></div></div>
+      </section>
+
+      <section class="content hidden" id="view-security">
+        <div class="page-heading"><div><p class="eyebrow">NOVA PROTECT</p><h1 data-i18n="security">الأمان والخصوصية</h1><p class="muted" data-i18n="securitySub">التحكم في خصوصيتك يبدأ من هنا</p></div><span class="secure-badge">⬡ <span data-i18n="securityPlan">خطة الحماية</span></span></div>
+        <div class="security-grid"><div class="security-card"><span class="quick-icon green">⌑</span><b data-i18n="e2ee">التشفير من طرف إلى طرف</b><p data-i18n="e2eeDesc">سيُفعّل للمحادثات الخاصة بعد دمج بروتوكول تشفير مدقق.</p><span class="planned" data-i18n="planned">مخطط للمرحلة الثالثة</span></div><div class="security-card"><span class="quick-icon purple">♙</span><b data-i18n="accountProtection">حماية الحساب</b><p data-i18n="accountDesc">التحقق متعدد العوامل وإدارة الأجهزة والجلسات.</p><span class="planned" data-i18n="planned">مخطط للتنفيذ</span></div><div class="security-card"><span class="quick-icon blue">▣</span><b data-i18n="hiddenChats">قفل وإخفاء المحادثات</b><p data-i18n="hiddenDesc">مساحة خاصة لا تُفتح إلا بعد التحقق.</p><span class="planned" data-i18n="planned">مخطط للتنفيذ</span></div><div class="security-card"><span class="quick-icon pink">◈</span><b data-i18n="backup">نسخ احتياطي مشفر</b><p data-i18n="backupDesc">استعادة آمنة بمفتاح يملكه المستخدم.</p><span class="planned" data-i18n="planned">مخطط للتنفيذ</span></div></div>
+        <div class="notice"><b data-i18n="honestSecurity">شفافية أمنية</b><p data-i18n="honestSecurityText">هذه نسخة واجهات أولية وليست خدمة مراسلة آمنة بعد. لن ندّعي وجود تشفير أو حماية فعلية قبل تنفيذها واختبارها.</p></div>
+      </section>
+
+      <section class="content hidden" id="view-settings">
+        <div class="page-heading"><div><p class="eyebrow">PREFERENCES</p><h1 data-i18n="settings">الإعدادات</h1><p class="muted" data-i18n="settingsSub">خصص تجربة NOVA AI</p></div></div>
+        <div class="panel settings-panel"><div class="setting-row language-setting"><div><b data-i18n="language">لغة التطبيق</b><small data-i18n="languageDesc">اختر لغة الواجهة من قائمة اللغات المتاحة</small></div><select id="language-select" class="language-select" aria-label="App language"></select></div><div class="setting-row"><div><b data-i18n="appearance">المظهر</b><small data-i18n="appearanceDesc">واجهة داكنة مريحة</small></div><span class="setting-value" data-i18n="dark">داكن</span></div><div class="setting-row"><div><b data-i18n="about">حول NOVA AI</b><small data-i18n="aboutDesc">نسخة تأسيسية 0.1.0</small></div><span class="setting-value">v0.1.0</span></div></div>
+      </section>
+      <footer class="footer"><span>© 2026 NOVA AI</span><span data-i18n="footer">تواصل بذكاء. خصوصيتك أولاً.</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="api-config.js"></script><script src="app.js"></script>
+<script>
+if ("serviceWorker" in navigator) { window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(()=>{})); }
+</script></body>
+</html>
